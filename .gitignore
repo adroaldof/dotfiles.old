@@ -17,8 +17,10 @@ Thumbs.db
 
 
 ###############################################################################
-# Do not ignore this files
+# Do not ignore this files and directories
 ###############################################################################
 
 !.gitconfig
 !.gitignore
+!.vim/
+!.vimrc

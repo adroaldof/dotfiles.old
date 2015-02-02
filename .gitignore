@@ -20,4 +20,5 @@ Thumbs.db
 # Do not ignore this files
 ###############################################################################
 
+!.gitconfig
 !.gitignore

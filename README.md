@@ -31,6 +31,7 @@ This are basic setup for system files and other useful programs that help on dev
 1. zsh-completions
 1. wine
 
+![Installed Brew Apps](./homebrew.png)
 
 ## App Store Programs
 

@@ -17,9 +17,11 @@ This are basic setup for system files and other useful programs that help on dev
         ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 1. android-sdk
+    - Install all needed versions (It will take a while)
 1. ant
 1. gettext
 1. mongodb
+    - Intall at /var/db
 1. nginx
 1. pyenv
 1. rbenv
@@ -53,6 +55,7 @@ This are basic setup for system files and other useful programs that help on dev
 1. [BetterTouchTool](http://bettertouchtool.en.softonic.com/mac)
 1. [Genymotion](https://www.genymotion.com/)
 1. [GitX](https://rowanj.github.io/gitx/)
+    - `Gitx > Enable Terminal Usage`
 1. [Mou](http://25.io/mou/)
 1. [MPlayerX](http://mplayerx.org/)
 1. [OpenEmu](http://openemu.org/)

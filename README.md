@@ -61,6 +61,7 @@ This are basic setup for system files and other useful programs that help on dev
 1. [Postico](https://eggerapps.at/postico/)
 1. [PyCharm](https://www.jetbrains.com/pycharm/)
 1. [Sublime Text](http://www.sublimetext.com/)
+    - [Sublime Text Configurations](./READMES/sublime.md)
 1. [TeamViewer](https://www.teamviewer.com)
 1. [Transmit](https://panic.com/transmit/)
 1. [VirtualBox](https://www.virtualbox.org/)

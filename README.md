@@ -65,5 +65,6 @@ This are basic setup for system files and other useful programs that help on dev
 1. [Transmit](https://panic.com/transmit/)
 1. [VirtualBox](https://www.virtualbox.org/)
 1. [Webstorm](https://www.jetbrains.com/webstorm/)
+    - [Webstorm Configurations](./READMES/webstorm.md)
 
 

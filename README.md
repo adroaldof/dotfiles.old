@@ -2,6 +2,13 @@
 
 This are basic setup for system files and other useful programs that help on development enviroment.
 
+## Backup First
+
+1. Make a data backup
+2. Sign out iTunes (`Store > Deauthorize This Computer`. [Deauthorizing your computer using iTunes](https://support.apple.com/en-us/HT204385))
+3. Sign out iCloud ([Archive or make copies of your iCloud data](https://support.apple.com/en-us/HT204055))
+4. Sign out iMessage (`Preferences > Accounts`. Select your iMessage account, then click Sign Out)
+
 ## System Files
 
 1. [Git Config File](./.gitcofig)

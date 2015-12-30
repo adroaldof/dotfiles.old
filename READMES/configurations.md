@@ -31,17 +31,17 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 
 1. Copy `adro.zsh-theme` to `/Users/adro/.oh-my-zsh/themes`
 
+1. Change the default shell 
+```bash
+chsh -s /bin/zsh
+```
+
 
 ## Brew
 
 1. Install [Home Brew](http://brew.sh/)
 ```bash
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```
-
-1. Change the default shell 
-```bash
-chsh -s /bin/zsh
 ```
 
 

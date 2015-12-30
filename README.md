@@ -14,8 +14,13 @@ This are basic setup for system files and other useful programs that help on dev
 1. [Git Config File](./.gitcofig)
 1. [Adro ZSH Theme](./.adro.zsh-theme)
 1. [Adroaldo ZSH Theme](./.adroaldo.zsh-theme.bkp)
-2. [Basic VimRC File](./.vimrc.my.bkp)
+1. [Basic VimRC File](./.vimrc.my.bkp)
+1. [Basic zshrc File](./.zshrc)
 
+
+## Manual Configurations
+
+1. [Some primary configurations](./READMES/configurations.md)
 
 ## Command Line Programs
 

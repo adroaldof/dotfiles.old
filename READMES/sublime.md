@@ -19,13 +19,11 @@
 1. BracketHighliter
 1. CSSLint
 1. Djaneiro
-1. Django Click
 1. Emmet
 1. Hayaku
 1. Hyperion for gettext
 1. MarkdownEditing
 1. Python Flake8 Lint
-1. PyV8
 1. Sass
 1. SideBarEnhancements
 1. Stylus

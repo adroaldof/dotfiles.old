@@ -23,9 +23,9 @@ ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[red]%}✭%{$reset_color%}"
 prompt_setup () {
   virtualenv_path="$VIRTUAL_ENV"
 
-  venv_prompt='%{$fg[white]%}(%{$reset_color%}%{$fg[cyan]%}${VIRTUAL_ENV##*/}%{$reset_color%}%{$fg[white]%})%{$reset_color%} '
-  base_prompt='%{$fg[yellow]%}%n%{$reset_color%}%{$fg[white]%}@%{$reset_color%}%{$fg[green]%}%m%{$reset_color%}%{$fg[red]%} :%{$reset_color%}%{$fg[white]%} [%{$reset_color%}%{$fg[cyan]%}%0~%{$reset_color%}%{$fg[white]%}] %{$reset_color%}'
-  post_prompt='%{$fg[white]%}$%{$reset_color%}%{$fg[white]%}➜%{$reset_color%}  '
+  venv_prompt="%{$fg[white]%}(%{$reset_color%}%{$fg[cyan]%}${VIRTUAL_ENV##*/}%{$reset_color%}%{$fg[white]%})%{$reset_color%} "
+  base_prompt="%{$fg[yellow]%}%n%{$reset_color%}%{$fg[white]%}@%{$reset_color%}%{$fg[green]%}%m%{$reset_color%}%{$fg[red]%} :%{$reset_color%}%{$fg[white]%} [%{$reset_color%}%{$fg[cyan]%}%0~%{$reset_color%}%{$fg[white]%}] %{$reset_color%}"
+  post_prompt="%{$fg[white]%}$%{$reset_color%}%{$fg[white]%}➜%{$reset_color%}  "
 
   base_prompt_nocolor=$(echo "$venv_prompt" | perl -pe "s/%\{[^}]+\}//g")
   base_prompt_nocolor=$(echo "$base_prompt" | perl -pe "s/%\{[^}]+\}//g")
@@ -42,11 +42,11 @@ prompt_precmd () {
 
   local nl=$'\n%{\r%}';
 
-  PROMPT="$base_prompt$gitinfo$nl$post_prompt"
-
   local virtualenv_path="$VIRTUAL_ENV"
-  if [[ -n $virtualenv_path && $virtualenv_path != "" && -n $VIRTUAL_ENV_DISABLE_PROMPT ]]; then
+  if [[ -n $virtualenv_path && $virtualenv_path != "" ]]; then
     PROMPT="$venv_prompt$base_prompt$gitinfo$nl$post_prompt"
+  else
+    PROMPT="$base_prompt$gitinfo$nl$post_prompt"
   fi
 }
 

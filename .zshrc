@@ -58,9 +58,13 @@ plugins=(git)
 ###############################################################################
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
-#export PATH="/usr/local/heroku/bin:/Users/adro/Library/Python/2.7/bin:/usr/local/mysql/bin:/Applications/Postgres.app/Contents/Versions/9.4/bin/pg_config:/Applications/Postgres.app/Contents/Versions/9.4/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/git/bin:/Users/adroaldo/.rvm/bin"
+# export PATH="/usr/local/heroku/bin:/Users/adro/Library/Python/2.7/bin:/usr/local/mysql/bin:/Applications/Postgres.app/Contents/Versions/9.4/bin/pg_config:/Applications/Postgres.app/Contents/Versions/9.4/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/git/bin:/Users/adroaldo/.rvm/bin"
 
 source $ZSH/oh-my-zsh.sh
+
+export ARCHFLAGS="-arch x86_64" 
+export LDFLAGS="-L/usr/local/opt/openssl/lib" 
+export CFLAGS="-I/usr/local/opt/openssl/include"
 
 
 ###############################################################################
@@ -74,13 +78,6 @@ export LANG=en_US.UTF-8
 # Postgres App Path
 ###############################################################################
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
-
-
-###############################################################################
-# NVM Path
-###############################################################################
-export NVM_DIR="/Users/adro/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 
 ###############################################################################
@@ -101,7 +98,7 @@ export GITHUB_ACCESS_TOKEN=""
 
 
 ###############################################################################
-# Server Configurations
+# Fiddus Server Configurations
 ###############################################################################
 
 # Amazon Access Key and Secret
@@ -115,7 +112,13 @@ export MAILGUN_APIKEY=
 ###############################################################################
 # PyEnv autocomplete
 ###############################################################################
+# To use Homebrew's directories rather than ~/.pyenv add to your profile:
+# export PYENV_ROOT=/usr/local/var/pyenv
+
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+
+source /usr/local/bin/virtualenvwrapper.sh
+export WORKON_HOME=~/.virtualenvs
 
 
 ###############################################################################
@@ -124,3 +127,33 @@ if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 if which rbenv > /dev/null; 
     then eval "$(rbenv init -)"; 
 fi
+
+
+###############################################################################
+# NVM Path
+###############################################################################
+export NVM_DIR="/Users/adro/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+
+###############################################################################
+# NVM Path
+###############################################################################
+export NVM_DIR="/Users/adro/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+
+###############################################################################
+# Android Path
+###############################################################################
+# adb
+export PATH=${PATH}:/Users/adro/androidsdk
+
+# android
+export PATH=${PATH}:/Users/adro/androidsdk/tools
+
+
+###############################################################################
+# Genymotion Shell Path
+###############################################################################
+export PATH=${PATH}:/Applications/Genymotion\ Shell.app/Contents/MacOS
